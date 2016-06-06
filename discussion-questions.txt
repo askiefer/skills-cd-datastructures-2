@@ -1,0 +1,51 @@
+Recursion
+
+1. In your own words, what is recursion?
+
+Recursion is when a function calls itself in order to break a problem down into smaller and smaller components until it is solved. 
+
+2. Why is a base case necessary?
+
+A recursive solution must have a base case because a bse case enables the function to break, or return, out of the loop of calling itself. Without a base case, a recursive function would result in a continuous loop.
+
+3. What is a graph?
+
+A graph is a general data structure that can be either cyclic or acyclic and directed or undirected. A graph's nodes can have any number of connections. A graph consists of vertices (nodes), edges (connect two vertices, can be either one or two way), and weight (if the edges are weighted, an example might be a flight map and the time it takes for one flight to depart one city (a node) and arrive in a different city (another node) might be represented by the length of the edge). 
+
+4. How are graphs and trees different? 
+
+A tree is a special kind of graph - a tree is a hiearchical representation of data where all the children of one node are independent of the children of another node. Trees are directed acyclic graphs that consist of a finite number of vertices and edges. There is no way to start at any vertex and follow a sequence of edges to return to v again. 
+
+5. Good models for a graph?
+
+National debt (debt owed by countries to one another). A tangled web of madness. National debt is not a one to many relationship - it is a many to many, cyclical relationship and thus well represented by a graph.
+
+Performance:
+
+Data Structure			Index	Search	Add-R	Add-L	Pop-L	Pop-R
+
+Python List (Array)		O(1)	O(n)	O(1)	O(n)	O(n)	O(1) 	 	
+Linked List 	 	 	O(n) 	O(n)	O(1) 	O(1) 	O(1)	O(n)
+Doubly-Linked List	 	0(n) 	O(n) 	O(1)	O(1)	O(1)	O(1) 	 	
+Queue (as Array)		X		X	 	O(1) 	X		O(n)	X
+Queue (as LL or DLL)	X		X	 	O(1)	X	 	O(1)	X
+Stack (as Array, LL, 	
+or DLL)					X		X	 	O(1)	X		X		O(1)
+Deque (as DLL)			X		X	 	O(1)	O(1)	O(1)	O(1) 	 	
+
+Sorting
+
+1. Bubble Sort
+In the bubble sort, two adjacent items are compared and the larger of the items moves to the right ('bubbles' to the top). Once the largest value in a list is part of the pair, it will continue to move to the right until a pass is complete. The bubble sort makes multiple passes through a list until the list is fully sorted. In Python, the ith and jth elements are swapped at the same time.
+
+2. Merge Sort
+The merge sort algorithm is a divide and conquer solution that splits a list in half log n times until the list is down to many lists of just one item. Then, the list is built back up using a merge technique that compares and sorts the items. This process and sort technique requires n operations for a list of length n. Hence, merge sort is O(n log n).
+
+3. Quick Sort
+A quick sort selects one value as a pivot value (usually randomly). Then, two items at the left and right most position of the list are identified. The left item is incremented until a value is located that is greater than the pivot value, and the right item is decremented until a value is located that is less than the pivot value. Once these two items are found, they are exchanged, and the process is repeated. At the point where the pivot value is in the right place, the sorting technique can be invoked again on both sides of the list. Quick sort makes use of a recursive function.
+
+Git branching
+1. I would use git branching when I wanted to work on a new feature seperate from the working application. Git branching is an independent line of development that abstracts the edit/stage/commit process. Branching is a way to request a brand new directory, staging area, and project history without changing the master branch. 
+ 
+2. A pull request is when you make a request of the owner to look at your branch and merge it into another branch (sometimes the master branch).
+
